@@ -13,7 +13,7 @@ lr=5e-5
 dataset_name="vicgalle/alpaca-gpt4"
 dataset_sample=20000
 model_name_or_path="meta-llama/Llama-2-7b-hf"
-output_dir=OpenFedLLM/output
+output_dir=output
 
 gpu=0
 fed_alg="fedavg"
