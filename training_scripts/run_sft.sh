@@ -18,7 +18,7 @@ output_dir=OpenFedLLM/output
 gpu=0
 fed_alg="fedavg"
 
-CUDA_VISIBLE_DEVICES=$gpu python main_sft.py \
+CUDA_VISIBLE_DEVICES=$gpu python OpenFedLLM/main_sft.py \
  --learning_rate $lr \
  --model_name_or_path $model_name_or_path \
  --dataset_name $dataset_name \
