@@ -32,7 +32,5 @@ CUDA_VISIBLE_DEVICES=$gpu python OpenFedLLM/main_sft.py \
  --seq_length $seq_length \
  --peft_lora_r $lora_r \
  --peft_lora_alpha $lora_alpha \
- --use_peft \
- --load_in_8bit \
  --output_dir $output_dir \
  --template "alpaca" \
