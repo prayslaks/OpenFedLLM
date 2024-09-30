@@ -63,7 +63,7 @@ class ScriptArguments:
     local_data_dir: Optional[str] = field(default=None, metadata={"help": "the local data directory if you want to use downloaded data"})
 
 parser = HfArgumentParser((ScriptArguments, FedArguments))
-script_args, fed_args = parser.parse_args_into_dataclasses(return_remaining_strings=True)[0]
+script_args, fed_args = parser.parse_args_into_dataclasses()
 
 # ===== Define the LoraConfig =====
 if script_args.use_peft:
