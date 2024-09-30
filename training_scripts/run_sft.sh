@@ -3,7 +3,7 @@ num_rounds=200
 batch_size=16
 gradient_accumulation_steps=1
 seq_length=512
-num_clients=20
+num_clients=10
 sample_clients=2
 lora_r=32
 lora_alpha=64   # twice of lora_r
@@ -13,9 +13,9 @@ lr=5e-5
 dataset_name="vicgalle/alpaca-gpt4"
 dataset_sample=20000
 model_name_or_path="meta-llama/Llama-2-7b-hf"
-output_dir=./output
+output_dir=OpenFedLLM/output
 
-gpu=2
+gpu=0
 fed_alg="fedavg"
 
 CUDA_VISIBLE_DEVICES=$gpu python main_sft.py \
