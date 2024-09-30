@@ -6,7 +6,7 @@ seq_length=512
 num_clients=10
 sample_clients=2
 lora_r=32
-lora_alpha=64
+lora_alpha=64  
 lr=5e-5
 
 dataset_name="vicgalle/alpaca-gpt4"
@@ -32,5 +32,7 @@ CUDA_VISIBLE_DEVICES=$gpu python OpenFedLLM/main_sft.py \
  --seq_length $seq_length \
  --peft_lora_r $lora_r \
  --peft_lora_alpha $lora_alpha \
+ --use_peft \
+ --load_in_8bit \
  --output_dir $output_dir \
  --template "alpaca" \
