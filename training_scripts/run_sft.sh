@@ -6,10 +6,9 @@ seq_length=512
 num_clients=10
 sample_clients=2
 lora_r=32
-lora_alpha=64   # twice of lora_r
+lora_alpha=64
 lr=5e-5
 
-# local_data_dir=""       # you may uncomment this line if your data is stored locally and include it in the python command
 dataset_name="vicgalle/alpaca-gpt4"
 dataset_sample=20000
 model_name_or_path="meta-llama/Llama-2-7b-hf"
